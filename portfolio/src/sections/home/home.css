@@ -1,19 +1,21 @@
 section{
     background-color: var(--color-forest);
     color: var(--color-paper);
-  background-image:
+    background-image:
     linear-gradient(var(--color-mist-10) 1px, transparent 1px),
     linear-gradient(90deg, var(--color-mist-10) 1px, transparent 1px);
 
-background-size: 50px 50px;
+    background-size: 50px 50px;
     height: 90vh;
     display: flex;
     justify-content: center;
     padding: 0px 5% 0px 5%;
+    align-items: center;
 }
 
 .left{
     width: 50%;
+    height: 55.55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,7 +23,7 @@ background-size: 50px 50px;
 }
 
 .left h1{
-    font-size: 80px;
+    font-size: var(--text-h1);
     font-weight: 100;
 }
 .left button{
@@ -30,4 +32,8 @@ background-size: 50px 50px;
 }
 .right{
     width: 50%;
+    height: 55.55%;
+}
+p{
+    font-size: var(--leading-tight);
 }
