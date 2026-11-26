@@ -1,6 +1,6 @@
 import "./home.css";
 import DepthCarousel from './DepthCarousel';
-import image1 from "../../assets/img1.jpg"
+import image1 from "../../assets/img1.jpg";
 
 const items = [
   { image: image1, alt: 'One' },
@@ -12,22 +12,32 @@ const items = [
 
 function Home(){
     return(
-        <section>
+        <section className="home">
             <div className="left">
-                <p>// INDEPENDENT WEB DEVELOPER . ITALY - WORLDWIDE</p>
-                <h1>I turn Ideas into digital experiences.<br /> Built with purpose.</h1>
-                <p>I design and develop digital experiences focused on usability, simplicity and purpose.</p>
+                <p>
+                    <span className="desktop-text">// INDEPENDENT WEB DEVELOPER . ITALY - WORLDWIDE</span>
+                    <span className="mobile-text">// INDEPENDENT WEB DEVELOPER . ITALY</span>
+                </p>
+                <h1>
+                    <span className="desktop-text">I turn Ideas into digital experiences.<br /> Built with purpose.</span>
+                    <span className="mobile-text">I turn Ideas into digital experiences.</span>
+                    
+                </h1>
+                <p>
+                    <span className="desktop-text">I design and develop digital experiences focused on usability, simplicity and purpose.</span>
+                    <span className="mobile-text">usability, simplicity and purpose.</span>                 
+                </p>
                 <button>Explore my work</button>
             </div>
             <div className="right">
-                <div style={{ height: '100%', position: 'relative' }}>
+                <div className="carrousel" style={{ height: '100%', position: 'relative' }}>
                 <DepthCarousel
                     items={items}
                     depth={220}
                     spread={140}
                     tilt={22}
                     tiltDirection="right"
-                    perspective={2000}
+                    perspective={1000}
                     visibleCards={4}
                     falloff={0.2}
                     blur={16}
@@ -35,7 +45,7 @@ function Home(){
                     loop
                     cardWidth={350}
                     cardHeight={350}
-                    radius={18}
+                    radius={2}
                     tint="#05060a"
                     duration={700}
                     ease="power3.out"

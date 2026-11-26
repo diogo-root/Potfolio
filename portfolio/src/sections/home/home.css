@@ -1,4 +1,4 @@
-section{
+.home{
     background-color: var(--color-forest);
     color: var(--color-paper);
     background-image:
@@ -6,11 +6,18 @@ section{
     linear-gradient(90deg, var(--color-mist-10) 1px, transparent 1px);
 
     background-size: 50px 50px;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     padding: 0px 5% 0px 5%;
     align-items: center;
+}
+
+.desktop-text{
+    display: block;
+}
+.mobile-text{
+    display: none;
 }
 
 .left{
@@ -34,6 +41,15 @@ section{
     width: 50%;
     height: 55.55%;
 }
-p{
-    font-size: var(--leading-tight);
+@media (max-width: 1600px) {
+    .left h1{
+        font-size: var(--text-h2);
+    }
+    .left p{font-size: 12px;}
+}
+@media (max-width: 1300px){
+    .left p{font-size: 11px;}
+}
+@media (max-width: 900px){
+    
 }

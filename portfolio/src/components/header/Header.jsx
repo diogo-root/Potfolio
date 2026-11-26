@@ -3,9 +3,8 @@ import "./header.css";
 function Header(){
     return(
         <header>
-            <h1>Diogo Fronzaglia</h1>
+            <h1>Diogo F.Cirigliano</h1>
             <Navbar/>
-            <button>Light mode</button>      
         </header>            
     );
 }

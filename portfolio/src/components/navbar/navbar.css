@@ -1,6 +1,6 @@
 ul{
     display: flex;
-    gap: 10%;
+    gap: clamp(10px, 1.5vw, 24px);
     list-style: none;
 }
 a{
