@@ -38,13 +38,13 @@ function Home(){
                     tilt={22}
                     tiltDirection="right"
                     perspective={1000}
-                    visibleCards={4}
+                    visibleCards={2}
                     falloff={0.2}
                     blur={16}
                     autoplay
                     loop
-                    cardWidth={350}
-                    cardHeight={350}
+                    cardWidth={370}
+                    cardHeight={370}
                     radius={2}
                     tint="#05060a"
                     duration={700}

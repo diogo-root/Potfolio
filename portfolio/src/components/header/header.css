@@ -12,6 +12,26 @@ header{
     z-index: 1;
 }
 
-@media (max-width: 920px){
+/* Mobile pequeno */
+@media (max-width: 375px) { }
 
+/* Mobile */
+@media (max-width: 600px) { }
+
+/* Tablet */
+@media (max-width: 768px) { }
+
+/* Desktop compacto */
+@media (max-width: 900px){
+    header{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    a{
+        font-size: var(--text-small);
+    }
+    header h1{
+        font-size: var(--text-h3);
+    }
 }
